@@ -1,14 +1,17 @@
 function random(from, to) {
-  // TODO
+  return from+Math.randon()*(to-from);
 }
 
 class Obstacle {
   constructor() {
-    // TODO
+    this.w = random(0, 800);
+    this.h = 50;
+    this.x = random(50, 950);
+    this.y = 0;
   }
 
   draw() {
-    // TODO
+    ctx.fillRect();
   }
 
   hits(car) {
